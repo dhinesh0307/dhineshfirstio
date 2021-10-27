@@ -6,7 +6,9 @@ label slave1
 stages
 {
 stage("git stage"){
+steps{
 git 'https://github.com/dhinesh0307/dhineshfirstio.git'
+}
 }
 }
 }
