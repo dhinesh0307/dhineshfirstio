@@ -1,6 +1,8 @@
 pipeline
 {
-
+agent{
+label Master
+}
 stages
 {
 stage("git stage"){
