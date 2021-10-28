@@ -10,5 +10,10 @@ steps{
 git 'https://github.com/dhinesh0307/dhineshfirstio.git'
 }
 }
+stage("docker build"){
+steps{
+sh 'sudo docker build /home/ubuntu/test1/workspace/firstio/. -t  app'
+}
+}
 }
 }
