@@ -1,14 +1,9 @@
 pipeline
 {
-agent{
-node{
-label slave1
-}
-}
+agent any
 stages
 {
 stage("git stage"){
-
 steps{
 git 'https://github.com/dhinesh0307/dhineshfirstio.git'
 }
