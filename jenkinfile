@@ -1,28 +1,22 @@
-@Library('dhinesh') _
-
-import com.cleverbuilder.GlobalVars
-import com.cleverbuilder.SampleClass
 pipeline
 {
-agent{
-label 'slave1'
-}
+agent any
 stages
 {
-stage("git stage"){
+stage("git stage u"){
 steps{
 git 'https://github.com/dhinesh0307/dhineshfirstio.git'
+}
+post{
+always{
+echo "success"
+}
 }
 }
 stage("docker build"){
 
 steps{
- script {
-                    def person = new SampleClass()
-                    person.age = 21
-                    person.increaseAge(10)
-                    echo 'Incremented age, is now : ' + person.age
-                }
+echo "dhinesh"
 }
 }
 }
