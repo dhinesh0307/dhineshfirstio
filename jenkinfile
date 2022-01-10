@@ -3,7 +3,7 @@ pipeline
 agent any
 stages
 {
-stage("git stage"){
+stage("git stage u"){
 steps{
 git 'https://github.com/dhinesh0307/dhineshfirstio.git'
 }
