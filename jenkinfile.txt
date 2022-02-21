@@ -1,0 +1,49 @@
+pipeline{
+    agent any
+    environment{
+        dhinesh="done"
+    }
+    stages{
+        stage("developemnt")
+        {
+            steps{
+            echo "development"
+            }
+        }
+        stage("testting")
+        {
+            parallel{
+                stage("unit test")
+                {
+                    steps{
+                    echo "unit test"
+                    }
+                }
+                stage("code coverage")
+                {
+                    steps{
+                    echo "code coverage testing"
+                    }
+                }
+            }
+
+        }
+        stage("build")
+        {
+            when{
+                expression{
+                    env.${dhinesh}=="done"
+                }
+            }
+            steps{
+                echo "ada work aguthu pa"
+            }
+
+        }
+    }
+    post{
+        always{
+            echo "successs"
+        }
+    }
+}
