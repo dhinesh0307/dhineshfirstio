@@ -32,7 +32,7 @@ pipeline{
         {
             when{
                 expression{
-                    env.${dhinesh}=="done"
+                    env.dhinesh=='done'
                 }
             }
             steps{
