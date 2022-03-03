@@ -1,7 +1,7 @@
 
 @library('dhinesh')
 
-import package com.cleverbuilder.SampleClass 
+import com.cleverbuilder.SampleClass 
 
 pipeline{
     agent any
