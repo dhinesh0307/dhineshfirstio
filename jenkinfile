@@ -26,14 +26,10 @@ pipeline{
                     
                     script{
                     
-                    def dhin=new SampleClass();
-                    environment{
-                     
-                     value=dhin.envi("prod")
+                    def dhin=new SampleClass()
+                    def value= dhin.envi("prod")
                     
-                    }
-                    
-                    echo ${value}
+                    echo value
                     echo "unit test"
                     
                     
