@@ -24,7 +24,7 @@ pipeline{
                     
                     
                     
-                    scripts{
+                    script{
                     
                     def dhin=new SampleClass();
                     environment{
