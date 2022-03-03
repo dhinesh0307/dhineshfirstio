@@ -1,3 +1,8 @@
+
+@library('dhinesh')
+
+import package com.cleverbuilder.SampleClass 
+
 pipeline{
     agent any
     environment{
@@ -16,7 +21,27 @@ pipeline{
                 stage("unit test")
                 {
                     steps{
+                    
+                    
+                    
+                    
+                    scripts{
+                    
+                    def dhin=new SampleClass();
+                    environment{
+                     
+                     value=dhin.envi("prod")
+                    
+                    }
+                    
+                    echo ${value}
                     echo "unit test"
+                    
+                    
+                    
+                    
+                    
+                    }
                     }
                 }
                 stage("code coverage")
