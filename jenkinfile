@@ -3,7 +3,7 @@ pipeline
 agent any
 stages
 {
-stage("gidt stage u"){
+stage("gidt sdftage u"){
 steps{
 git 'https://github.com/dhinesh0307/dhineshfirstio.git'
 }
