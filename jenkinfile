@@ -13,7 +13,7 @@ echo "success"
 }
 }
 }
-stage("dockezxcvr build"){
+stage("dockezxcghvr build"){
 
 steps{
 echo "dhinesh"
