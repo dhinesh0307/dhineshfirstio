@@ -8,7 +8,7 @@ pipeline{
         dhinesh="done"
     }
     stages{
-        stage("developdfemnt")
+        stage("devenvlopdfemnt")
         {
             steps{
             echo "development"
