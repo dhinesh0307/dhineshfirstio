@@ -3,6 +3,11 @@ pipeline
 agent any
 stages
 {
+stage("mudila da"){
+steps{
+echo"papom"
+}
+}
 stage("gidtd sdftmhgage u"){
 steps{
 git 'https://github.com/dhinesh0307/dhineshfirstio.git'
