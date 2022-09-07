@@ -5,7 +5,7 @@ import com.cleverbuilder.SampleClass
 pipeline{
     agent any
     environment{
-        dhinesh="done"
+        dhinesh="dghone"
     }
     stages{
         stage("devenvlopdfemnt")
