@@ -13,7 +13,7 @@ echo "success"
 }
 }
 }
-stage("docker build"){
+stage("dockezxcvr build"){
 
 steps{
 echo "dhinesh"
