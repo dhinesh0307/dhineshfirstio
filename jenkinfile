@@ -1,61 +1,23 @@
-@Library('dhinesh')
+pipeline
+{
+agent any
+stages
+{
+stage("gidtd sdftmhgage u"){
+steps{
+git 'https://github.com/dhinesh0307/dhineshfirstio.git'
+}
+post{
+always{
+echo "success"
+}
+}
+}
+stage("dockezxcvr build"){
 
-import com.cleverbuilder.SampleClass 
-
-pipeline{
-    agent any
-    environment{
-        dhinesh="dghone"
-    }
-    stages{
-        stage("devenvlopdfemnt")
-        {
-            steps{
-            echo "development"
-            }
-        }
-        stage("testting")
-        {
-            parallel{
-                stage("unit test")
-                {
-                    steps{
-                    
-                    script{
-                    
-                    
-                    echo "value"
-                    echo "unit 1test"
-                    
-                    
-                    }
-                    }
-                }
-                stage("code covdferage")
-                {
-                    steps{
-                    echo "code coverage testing"
-                    }
-                }
-            }
-
-        }
-        stage("build")
-        {
-            when{
-                expression{
-                    env.dhinesh=='done'
-                }
-            }
-            steps{
-                echo "ada work aguthu pa"
-            }
-
-        }
-    }
-    post{
-        always{
-            echo "successsss"
-        }
-    }
+steps{
+echo "dhinesh"
+}
+}
+}
 }
